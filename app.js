@@ -1,4 +1,4 @@
-const API = "http://10.204.17.81:3000";
+const API = "https://potentially-region-wave-eddie.trycloudflare.com";
 
 const grid = document.getElementById("grid");
 const uploadInput = document.getElementById("uploadInput");
