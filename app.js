@@ -1,4 +1,4 @@
-const API = "https://potentially-region-wave-eddie.trycloudflare.com";
+const API = "https://recipe-passage-thursday-dylan.trycloudflare.com";
 
 const grid = document.getElementById("grid");
 const uploadInput = document.getElementById("uploadInput");
