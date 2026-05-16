@@ -177,3 +177,64 @@ body {
         flex-wrap: wrap;
     }
 }
+
+/* CUSTOM FULLSCREEN */
+
+.player-shell:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.player-shell:fullscreen .video-container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    background: black;
+}
+
+.player-shell:fullscreen #videoPlayer {
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    object-fit: contain;
+
+    background: black;
+}
+
+.player-shell:fullscreen .controls {
+    padding: 14px;
+}
+
+
+/* SAFARI */
+
+.player-shell:-webkit-full-screen {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.player-shell:-webkit-full-screen .video-container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.player-shell:-webkit-full-screen #videoPlayer {
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    object-fit: contain;
+
+    background: black;
+}
