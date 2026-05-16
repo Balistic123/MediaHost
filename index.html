@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediaHost</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="topbar">
+        <div class="logo">MEDIAHOST</div>
+
+        <label class="upload-btn">
+            Upload Video
+            <input type="file" id="uploadInput" hidden>
+        </label>
+    </div>
+
+    <div class="hero-content">
+        <div class="hero-sub">PRIVATE FAMILY STREAMING</div>
+
+        <h1>Your Personal Media Library</h1>
+
+        <p>
+            Stream family videos, movies, and memories across all your devices.
+        </p>
+
+        <button class="hero-button" id="scrollBtn">
+            Browse Library
+        </button>
+    </div>
+</div>
+
+<div class="section-header">
+    <h2>Recently Added</h2>
+</div>
+
+<div id="grid" class="grid"></div>
+
+<div id="playerOverlay" class="overlay hidden">
+
+    <div class="overlay-backdrop"></div>
+
+    <div class="player-shell">
+
+        <div class="player-topbar">
+
+            <div class="player-title" id="playerTitle">
+                Now Playing
+            </div>
+
+            <button id="closeBtn" class="close-button">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="video-wrapper">
+
+            <video id="videoPlayer" autoplay></video>
+
+            <div class="custom-controls">
+
+                <button id="playPauseBtn" class="control-btn">
+                    ▶
+                </button>
+
+                <input type="range" id="seekBar" value="0">
+
+                <button id="fullscreenBtn" class="control-btn">
+                    ⛶
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
