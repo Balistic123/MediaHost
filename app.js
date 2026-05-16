@@ -108,12 +108,23 @@ forwardBtn.onclick = () => {
     player.currentTime += 10;
 };
 
-fullscreenBtn.onclick = () => {
+fullscreenBtn.addEventListener("click", () => {
 
-    if (player.requestFullscreen) {
-        player.requestFullscreen();
+    const container = document.querySelector(".player-shell");
+
+    // Standard
+    if (container.requestFullscreen) {
+        container.requestFullscreen();
+
+    // Safari
+    } else if (container.webkitRequestFullscreen) {
+        container.webkitRequestFullscreen();
+
+    // Old Edge / IE
+    } else if (container.msRequestFullscreen) {
+        container.msRequestFullscreen();
     }
-};
+});
 
 player.addEventListener("timeupdate", () => {
 
