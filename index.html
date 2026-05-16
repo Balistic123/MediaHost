@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaHost</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <h1>MediaHost</h1>
+
+    <label class="upload-btn">
+        Upload Video
+        <input type="file" id="uploadInput" hidden>
+    </label>
+</div>
+
+<div id="grid" class="grid"></div>
+
+<div id="playerOverlay" class="overlay hidden">
+    <div class="player-container">
+        <button id="closeBtn">Close</button>
+        <video id="videoPlayer" controls autoplay></video>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
