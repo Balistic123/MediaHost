@@ -1,4 +1,4 @@
-const API = "REPLACE_WITH_YOUR_CLOUDFLARE_URL";
+const API = "https://recipe-passage-thursday-dylan.trycloudflare.com";
 
 const grid = document.getElementById("grid");
 const uploadInput = document.getElementById("uploadInput");
